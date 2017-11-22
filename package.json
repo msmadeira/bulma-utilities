@@ -4,8 +4,8 @@
   "description": "Bulma's extension to add utility classes",
   "main": "bulma-utilities.sass",
   "scripts": {
-    "build-css": "node-sass --include-path scss bulma-utilities.sass css/bulma-utilities.css",
-    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+    "build-css": "node-sass --include-path sass sass/bulma-utilities.sass css/bulma-utilities.css",
+    "watch-css": "nodemon -e sass -x \"npm run build-css\""
   },
   "repository": {
     "type": "git",
@@ -18,7 +18,7 @@
     "utilities"
   ],
   "author": "Matheus Madeira <madeira.s.matheus@gmail.com>",
-  "license": "GPL-3.0",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/msmadeira/bulma-utilities/issues"
   },
