@@ -11,7 +11,7 @@ npm install bulma-utilities
 
 ## Documentation
 
-Bulma Utilities website and full documentation is currently a work in progress (just like the extension itself), but, a preview will be displayed here.
+Bulma Utilities website and full documentation is currently a work in progress (just like the extension itself), however a preview will be displayed here.
 
 ### Utility Classes
 
