@@ -24,7 +24,6 @@
   },
   "homepage": "https://github.com/msmadeira/bulma-utilities#readme",
   "dependencies": {
-    "bulma-timeline": "^1.1.0",
     "node-sass": "^4.6.0",
     "nodemon": "^1.12.1"
   }
