@@ -1,6 +1,6 @@
 {
   "name": "bulma-utilities",
-  "version": "0.0.1",
+  "version": "0.1",
   "description": "Bulma's extension to add utility classes",
   "main": "bulma-utilities.sass",
   "scripts": {
@@ -24,7 +24,6 @@
   },
   "homepage": "https://github.com/msmadeira/bulma-utilities#readme",
   "dependencies": {
-    "bulma": "^0.6.0",
     "bulma-timeline": "^1.1.0",
     "node-sass": "^4.6.0",
     "nodemon": "^1.12.1"

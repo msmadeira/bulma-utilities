@@ -1,6 +1,78 @@
-$font-stack:    Helvetica, sans-serif
-$primary-color: #333
+// checking if sizes is set to allow users to set $sizes the way that they want
+$local-sizes: 0
+@if variable-exists(sizes)
+	$local-sizes: $sizes
+@else
+	$local-sizes: 0.75rem 1rem 1.25rem 1.5rem 2rem 2.5rem 3rem
 
-body
-  font: 100% $font-stack
-  color: $primary-color
+//utilities are in alphabetical order inside their group
+
+=all-size-dependent()
+  @each $size in $local-sizes
+    $i: index($local-sizes, $size)
+
+    // margin utilities
+    .has-margin-#{$i}
+   	  margin: $size !important
+    .has-margin-b-#{$i}
+      margin: 0 0 $size 0 !important
+    .has-margin-l-#{$i}
+      margin: 0 0 0 $size !important
+    .has-margin-r-#{$i}
+      margin: 0 $size 0 0 !important
+    .has-margin-t-#{$i}
+      margin: $size 0 0 0 !important
+    .has-margin-bl-#{$i}
+      margin: 0 0 $size $size !important
+    .has-margin-br-#{$i}
+      margin: 0 $size $size 0 !important
+    .has-margin-bt-#{$i}
+      margin: $size 0 $size 0 !important
+    .has-margin-lr-#{$i}
+      margin: 0 $size 0 $size !important
+    .has-margin-lt-#{$i}
+      margin: $size 0 0 $size !important
+    .has-margin-rt-#{$i}
+      margin: $size $size 0 0 !important
+    .has-margin-blr-#{$i}
+      margin: 0 $size $size $size !important
+    .has-margin-blt-#{$i}
+      margin: $size 0 $size $size !important
+    .has-margin-brt-#{$i}
+      margin: $size $size $size 0 !important
+    .has-margin-lrt-#{$i}
+      margin: $size $size 0 $size !important
+
+    // padding utilities
+    .has-padding-#{$i}
+   	  padding: $size !important
+    .has-padding-b-#{$i}
+      padding: 0 0 $size 0 !important
+    .has-padding-l-#{$i}
+      padding: 0 0 0 $size !important
+    .has-padding-r-#{$i}
+      padding: 0 $size 0 0 !important
+    .has-padding-t-#{$i}
+      padding: $size 0 0 0 !important
+    .has-padding-bl-#{$i}
+      padding: 0 0 $size $size !important
+    .has-padding-br-#{$i}
+      padding: 0 $size $size 0 !important
+    .has-padding-bt-#{$i}
+      padding: $size 0 $size 0 !important
+    .has-padding-lr-#{$i}
+      padding: 0 $size 0 $size !important
+    .has-padding-lt-#{$i}
+      padding: $size 0 0 $size !important
+    .has-padding-rt-#{$i}
+      padding: $size $size 0 0 !important
+    .has-padding-blr-#{$i}
+      padding: 0 $size $size $size !important
+    .has-padding-blt-#{$i}
+      padding: $size 0 $size $size !important
+    .has-padding-brt-#{$i}
+      padding: $size $size $size 0 !important
+    .has-padding-lrt-#{$i}
+      padding: $size $size 0 $size !important
+
++all-size-dependent()
