@@ -627,3 +627,42 @@
 
 .has-padding-lrt-7 {
   padding: 3rem 3rem 0 3rem !important; }
+
+.hide-overflow-x {
+  overflow-x: hidden; }
+
+.hide-overflow-y {
+  overflow-y: hidden; }
+
+.hide-overflow {
+  overflow: hidden; }
+
+.has-position-absolute {
+  position: absolute; }
+
+.has-position-relative {
+  position: relative; }
+
+.has-position-fixed {
+  position: fixed; }
+
+.has-flex-center-items {
+  display: flex;
+  align-items: center; }
+
+.has-flex-start-items {
+  display: flex;
+  align-items: flex-start; }
+
+.has-flex-end-items {
+  display: flex;
+  align-items: end; }
+
+.is-italic {
+  font-style: italic; }
+
+.unbreakable-text {
+  white-space: nowrap; }
+
+.is-circle {
+  border-radius: 60px; }
