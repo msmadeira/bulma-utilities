@@ -16,39 +16,26 @@ Bulma Utilities website and full documentation is currently a work in progress (
 ### Utility Classes
 
 #### Chart legend: {x} - is a number that represents the position in $sizes (Bulma's derived variable) array (Example: has-margin-3)
+#### Chart legend: {d} - is a letter that represents the direction, b stands for bottom, l for left, r for right and t for top (b, l, r, t, bl, br, bt, lr, lt, rt, blr, blt, brt, lrt) (Example: has-margin-b-3)
+#### Chart legend: {c} - is the color used in the class (Example: has-bg-primary)
 
 | Class                                                 | Description                                            |
 |-------------------------------------------------------|--------------------------------------------------------|
 | has-margin-{x}                                        | Adds margin to element                                 |
-| has-margin-b-{x}                                      | Adds bottom margin to element                          |
-| has-margin-l-{x}                                      | Adds left margin to element                            |
-| has-margin-r-{x}                                      | Adds right margin to element                           |
-| has-margin-t-{x}                                      | Adds top margin to element                             |
-| has-margin-bl-{x}                                     | Adds bottom and left margin to element                 |
-| has-margin-br-{x}                                     | Adds bottom and right margin to element                |
-| has-margin-bt-{x}                                     | Adds bottom and top margin to element                  |
-| has-margin-lr-{x}                                     | Adds left and right margin to element                  |
-| has-margin-lt-{x}                                     | Adds left and top margin to element                    |
-| has-margin-rt-{x}                                     | Adds right and top margin to element                   |
-| has-margin-blr-{x}                                    | Adds bottom, left and right margin to element          |
-| has-margin-blt-{x}                                    | Adds bottom, left and top margin to element            |
-| has-margin-brt-{x}                                    | Adds bottom, right and top margin to element           |
-| has-margin-lrt-{x}                                    | Adds left, right and top margin to element             |
+| has-margin-{d}-{x}                                    | Adds margin to element in respective direction         |
 | has-padding-{x}                                       | Adds padding to element                                |
-| has-padding-b-{x}                                     | Adds bottom padding to element                         |
-| has-padding-l-{x}                                     | Adds left padding to element                           |
-| has-padding-r-{x}                                     | Adds right padding to element                          |
-| has-padding-t-{x}                                     | Adds top padding to element                            |
-| has-padding-bl-{x}                                    | Adds bottom and left padding to element                |
-| has-padding-br-{x}                                    | Adds bottom and right padding to element               |
-| has-padding-bt-{x}                                    | Adds bottom and top padding to element                 |
-| has-padding-lr-{x}                                    | Adds left and right padding to element                 |
-| has-padding-lt-{x}                                    | Adds left and top padding to element                   |
-| has-padding-rt-{x}                                    | Adds right and top padding to element                  |
-| has-padding-blr-{x}                                   | Adds bottom, left and right padding to element         |
-| has-padding-blt-{x}                                   | Adds bottom, left and top padding to element           |
-| has-padding-brt-{x}                                   | Adds bottom, right and top padding to element          |
-| has-padding-lrt-{x}                                   | Adds left, right and top padding to element            |
+| has-padding-{d}-{x}                                   | Adds padding to element in respective direction        |
+| is-paddingless-{d}                                    | Removes padding in respective direction                |
+| is-marginless-{d}                                     | Removes margin in respective direction                 |
+| has-bg-{c}                                            | Changes background color to respective color           |
+| is-clickable                                          | Changes cursor to pointer                              |
+| is-zoom-in                                            | Changes cursor to zoom-in                              |
+| is-zoom-out                                           | Changes cursor to zoom-out                             |
+| is-cell                                               | Changes cursor to cell                                 |
+| is-not-allowed                                        | Changes cursor to not-allowed                          |
+| can-move                                              | Changes cursor to move                                 |
+| is-waiting                                            | Changes cursor to wait                                 |
+| has-margin-x-auto                                     | Adds 'margin: 0 auto' to element                       |
 | hide-overflow                                         | Hides overflow                                         |
 | hide-overflow-x                                       | Hides horizontal overflow                              |
 | hide-overflow-y                                       | Hides vertical overflow                                |

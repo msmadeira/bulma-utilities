@@ -1,9 +1,19 @@
 // checking if sizes is set to allow users to set $sizes the way that they want
 $local-sizes: 0
 @if variable-exists(sizes)
-	$local-sizes: $sizes
+  $local-sizes: $sizes
 @else
-	$local-sizes: 0.75rem 1rem 1.25rem 1.5rem 2rem 2.5rem 3rem
+  $local-sizes: 3rem 2.5rem 2rem 1.5rem 1.25rem 1rem 0.75rem
+
+// checking if colors is set to allow users to set $colors the way that they want
+$local-colors: 0
+@if variable-exists(colors)
+  $local-colors: $colors
+@else
+  $local-colors: ("primary": (hsl(171, 100%, 41%), hsl(0, 0%, 100%)), "success": (hsl(141, 71%,  48%), hsl(0, 0%, 100%)), "warning": (hsl(48,  100%, 67%), hsl(0, 0%, 100%)), "danger": (hsl(348, 100%, 61%), hsl(0, 0%, 100%)))
+
+//
+$directions: "b" "l" "r" "t" "bl" "br" "bt" "lr" "lt" "rt" "blr" "blt" "brt" "lrt"
 
 //utilities are in alphabetical order inside their group
 
@@ -14,7 +24,7 @@ $local-sizes: 0
     // margin utilities
 
     .has-margin-#{$i}
-   	  margin: $size !important
+      margin: $size !important
     .has-margin-b-#{$i}
       margin-bottom: $size !important
     .has-margin-l-#{$i}
@@ -105,10 +115,107 @@ $local-sizes: 0
       padding-right: $size !important
       padding-top: $size !important
 
+=all-color-dependent()
+  @each $name, $pair in $local-colors
+    $color: nth($pair, 1)
+
+    //Background color utilities
+
+    .has-bg-#{$name}
+      background-color: $color !important
+
 +all-size-dependent()
++all-color-dependent()
+
+//Marginless utilities
+.is-marginless-b
+  margin-bottom: 0 !important
+.is-marginless-l
+  margin-left: 0 !important
+.is-marginless-r
+  margin-right:0 !important
+.is-marginless-t
+  margin-top: 0 !important
+.is-marginless-bl
+  margin-bottom: 0 !important
+  margin-left: 0 !important
+.is-marginless-br
+  margin-bottom: 0 !important
+  margin-right: 0 !important
+.is-marginless-bt
+  margin-bottom: 0 !important
+  margin-top: 0 !important
+.is-marginless-lr
+  margin-left: 0 !important
+  margin-right: 0 !important
+.is-marginless-lt
+  margin-left: 0 !important
+  margin-top: 0 !important
+.is-marginless-rt
+  margin-right: 0 !important
+  margin-top: 0 !important
+.is-marginless-blr
+  margin-bottom: 0 !important
+  margin-left: 0 !important
+  margin-right: 0 !important
+.is-marginless-blt
+  margin-bottom: 0 !important
+  margin-left: 0 !important
+  margin-top: 0 !important
+.is-marginless-brt
+  margin-bottom: 0 !important
+  margin-right: 0 !important
+  margin-top: 0 !important
+.is-marginless-lrt
+  margin-left: 0 !important
+  margin-right: 0 !important
+  margin-top: 0 !important
+
+//Marginless utilities
+.is-paddingless-b
+  padding-bottom: 0 !important
+.is-paddingless-l
+  padding-left: 0 !important
+.is-paddingless-r
+  padding-right:0 !important
+.is-paddingless-t
+  padding-top: 0 !important
+.is-paddingless-bl
+  padding-bottom: 0 !important
+  padding-left: 0 !important
+.is-paddingless-br
+  padding-bottom: 0 !important
+  padding-right: 0 !important
+.is-paddingless-bt
+  padding-bottom: 0 !important
+  padding-top: 0 !important
+.is-paddingless-lr
+  padding-left: 0 !important
+  padding-right: 0 !important
+.is-paddingless-lt
+  padding-left: 0 !important
+  padding-top: 0 !important
+.is-paddingless-rt
+  padding-right: 0 !important
+  padding-top: 0 !important
+.is-paddingless-blr
+  padding-bottom: 0 !important
+  padding-left: 0 !important
+  padding-right: 0 !important
+.is-paddingless-blt
+  padding-bottom: 0 !important
+  padding-left: 0 !important
+  padding-top: 0 !important
+.is-paddingless-brt
+  padding-bottom: 0 !important
+  padding-right: 0 !important
+  padding-top: 0 !important
+.is-paddingless-lrt
+  padding-left: 0 !important
+  padding-right: 0 !important
+  padding-top: 0 !important
 
 // overflow classes
-
 .hide-overflow-x
 	overflow-x: hidden
 
@@ -119,7 +226,6 @@ $local-sizes: 0
 	overflow: hidden
 
 // position classes
-
 .has-position-absolute
 	position: absolute
 
@@ -130,7 +236,6 @@ $local-sizes: 0
 	position: fixed
 
 // flex positioning items
-
 .has-flex-center-items
 	display: flex
 	align-items: center
@@ -143,8 +248,23 @@ $local-sizes: 0
 	display: flex
 	align-items: end
 
-// not enough to make a full category of
+//cursor utilities
+.is-clickable
+  cursor: pointer
+.is-zoom-in
+  cursor: zoom-in
+.is-zoom-out
+  cursor: zoom-out
+.is-cell
+  cursor: cell
+.is-not-allowed
+  cursor: not-allowed
+.is-waiting
+  cursor: wait
+.can-move
+  cursor: move
 
+// not enough to make a full category of
 .is-italic
 	font-style: italic
 
@@ -153,3 +273,6 @@ $local-sizes: 0
 
 .is-circle
 	border-radius: 60px
+
+.has-margin-x-auto
+  margin: 0 auto
