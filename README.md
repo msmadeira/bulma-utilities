@@ -8,6 +8,7 @@ Bulma Utilities is a <a target='_blank' href='https://github.com/jgthms/bulma'>B
 ```sh
 npm install bulma-utilities
 ```
+If you have custom Bulma variables,  you can import bulma-utilities.sass after your variables file and it will use your custom $sizes and $colors lists.
 
 ## Documentation
 
@@ -49,4 +50,4 @@ Bulma Utilities website and full documentation is currently a work in progress (
 
 ## Copyright and license
 
-Code copyright 2017 Matheus Madeira. Code released under [the MIT license](https://github.com/msmadeira/bulma-utilities/blob/master/LICENSE).
+Code copyright 2019 Matheus Madeira. Code released under [the MIT license](https://github.com/msmadeira/bulma-utilities/blob/master/LICENSE).
