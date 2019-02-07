@@ -112,17 +112,7 @@ $local-colors: 0
       padding-right: $size !important
       padding-top: $size !important
 
-=all-color-dependent()
-  @each $name, $pair in $local-colors
-    $color: nth($pair, 1)
-
-    //Background color utilities
-
-    .has-bg-#{$name}
-      background-color: $color !important
-
 +all-size-dependent()
-+all-color-dependent()
 
 //Marginless utilities
 .is-marginless-b
@@ -168,7 +158,7 @@ $local-colors: 0
   margin-right: 0 !important
   margin-top: 0 !important
 
-//Marginless utilities
+//Paddingless utilities
 .is-paddingless-b
   padding-bottom: 0 !important
 .is-paddingless-l
@@ -214,36 +204,36 @@ $local-colors: 0
 
 // overflow classes
 .hide-overflow-x
-	overflow-x: hidden
+  overflow-x: hidden
 
 .hide-overflow-y
-	overflow-y: hidden
+  overflow-y: hidden
 
 .hide-overflow
-	overflow: hidden
+  overflow: hidden
 
 // position classes
 .has-position-absolute
-	position: absolute
+  position: absolute
 
 .has-position-relative
-	position: relative
+  position: relative
 
 .has-position-fixed
-	position: fixed
+  position: fixed
 
 // flex positioning items
 .has-flex-center-items
-	display: flex
-	align-items: center
+  display: flex
+  align-items: center
 
 .has-flex-start-items
-	display: flex
-	align-items: flex-start
+  display: flex
+  align-items: flex-start
 
 .has-flex-end-items
-	display: flex
-	align-items: end
+  display: flex
+  align-items: end
 
 //cursor utilities
 .is-clickable
@@ -262,14 +252,11 @@ $local-colors: 0
   cursor: move
 
 // not enough to make a full category of
-.is-italic
-	font-style: italic
-
 .unbreakable-text
   white-space: nowrap
 
 .is-circle
-	border-radius: 60px
+  border-radius: 60px
 
 .has-margin-x-auto
   margin: 0 auto
