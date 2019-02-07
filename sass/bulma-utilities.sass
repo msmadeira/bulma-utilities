@@ -112,7 +112,18 @@ $local-colors: 0
       padding-right: $size !important
       padding-top: $size !important
 
+=all-color-dependent()
+  @each $name, $pair in $local-colors
+    $color: nth($pair, 1)
+
+    //Background color utilities
+
+    .has-bg-#{$name}
+      background-color: $color !important
+
+
 +all-size-dependent()
++all-color-dependent()
 
 //Marginless utilities
 .is-marginless-b

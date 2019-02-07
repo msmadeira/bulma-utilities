@@ -824,6 +824,18 @@
   padding-right: 0.75rem !important;
   padding-top: 0.75rem !important; }
 
+.has-bg-primary {
+  background-color: #00d1b2 !important; }
+
+.has-bg-success {
+  background-color: #23d160 !important; }
+
+.has-bg-warning {
+  background-color: #ffdd57 !important; }
+
+.has-bg-danger {
+  background-color: #ff3860 !important; }
+
 .is-marginless-b {
   margin-bottom: 0 !important; }
 
