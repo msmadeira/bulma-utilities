@@ -16,7 +16,7 @@ Bulma Utilities website and full documentation is currently a work in progress (
 
 ### Utility Classes
 
-#### Chart legend:<br> {x} - is a number that represents the position in $sizes (Bulma's derived variable) array (Example: has-margin-3)<br>{d} - is a letter that represents the direction, b stands for bottom, l for left, r for right and t for top (b, l, r, t, bl, br, bt, lr, lt, rt, blr, blt, brt, lrt) (Example: has-margin-b-3)<br>{c} - is the color used in the class (Example: has-bg-primary)
+#### Chart legend:<br> {x} - is a number that represents the position in $sizes (Bulma's derived variable) array (Example: has-margin-3)<br>{d} - is a letter that represents the direction, b stands for bottom, l for left, r for right and t for top (b, l, r, t, bl, br, bt, lr, lt, rt, blr, blt, brt, lrt) (Example: has-margin-b-3)
 
 | Class                                                 | Description                                            |
 |-------------------------------------------------------|--------------------------------------------------------|
@@ -26,7 +26,6 @@ Bulma Utilities website and full documentation is currently a work in progress (
 | has-padding-{d}-{x}                                   | Adds padding to element in respective direction        |
 | is-paddingless-{d}                                    | Removes padding in respective direction                |
 | is-marginless-{d}                                     | Removes margin in respective direction                 |
-| has-bg-{c}                                            | Changes background color to respective color           |
 | is-clickable                                          | Changes cursor to pointer                              |
 | is-zoom-in                                            | Changes cursor to zoom-in                              |
 | is-zoom-out                                           | Changes cursor to zoom-out                             |
@@ -44,7 +43,6 @@ Bulma Utilities website and full documentation is currently a work in progress (
 | has-flex-center-items                                 | Adds display flex and align-items center               |
 | has-flex-start-items                                  | Adds display flex and align-items flex-start           |
 | has-flex-end-items                                    | Adds display flex and align-items flex-end             |
-| is-italic                                             | Changes font style to italic                           |
 | unbreakable-text                                      | Makes text don't break lines                           |
 | is-circle                                             | Makes element circular adding border-radius: 60px      |
 
