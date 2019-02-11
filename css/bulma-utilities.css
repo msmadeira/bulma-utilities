@@ -999,11 +999,29 @@
 .can-move {
   cursor: move; }
 
-.unbreakable-text {
-  white-space: nowrap; }
+.has-border-dashed {
+  border-style: dashed; }
+
+.has-border-dotted {
+  border-style: dotted; }
+
+.has-border-double {
+  border-style: double; }
+
+.has-border-hidden {
+  border-style: hidden; }
+
+.has-border-solid {
+  border-style: solid; }
 
 .is-circle {
   border-radius: 60px; }
 
+.unbreakable-text {
+  white-space: nowrap; }
+
 .has-margin-x-auto {
   margin: 0 auto; }
+
+.has-text-underlined {
+  text-decoration: underline; }

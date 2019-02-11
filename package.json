@@ -1,6 +1,6 @@
 {
   "name": "bulma-utilities",
-  "version": "0.3.5",
+  "version": "0.3.6",
   "description": "Bulma's extension to add utility classes",
   "main": "bulma-utilities.sass",
   "scripts": {

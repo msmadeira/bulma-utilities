@@ -44,8 +44,14 @@ Bulma Utilities website and full documentation is currently a work in progress (
 | has-flex-center-items                                 | Adds display flex and align-items center               |
 | has-flex-start-items                                  | Adds display flex and align-items flex-start           |
 | has-flex-end-items                                    | Adds display flex and align-items flex-end             |
-| unbreakable-text                                      | Makes text don't break lines                           |
+| has-border-dashed                                     | Adds 'dashed' style to border                          |
+| has-border-dotted                                     | Adds 'dotted' style to border                          |
+| has-border-double                                     | Adds 'double' style to border                          |
+| has-border-hidden                                     | Adds 'hidden' style to border                          |
+| has-border-solid                                      | Adds 'solid' style to border                           |
 | is-circle                                             | Makes element circular adding border-radius: 60px      |
+| unbreakable-text                                      | Makes text don't break lines                           |
+| has-text-underlined                                   | Adds 'text-decoration: underline' to element           |
 
 ## Copyright and license
 
