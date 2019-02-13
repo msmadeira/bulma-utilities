@@ -12,8 +12,6 @@ If you have custom Bulma variables,  you can import bulma-utilities.sass after y
 
 ## Documentation
 
-Bulma Utilities website and full documentation is currently a work in progress (just like the extension itself), however a preview will be displayed here.
-
 ### Utility Classes
 
 #### Chart legend:<br> {x} - is a number that represents the position in $sizes (Bulma's derived variable) array (Example: has-margin-3)<br>{d} - is a letter that represents the direction, b stands for bottom, l for left, r for right and t for top (b, l, r, t, bl, br, bt, lr, lt, rt, blr, blt, brt, lrt) (Example: has-margin-b-3)<br>{c} - is the color used in the class (Example: has-bg-primary)
